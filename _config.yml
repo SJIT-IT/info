@@ -1,0 +1,23 @@
+# Site settings
+title: "Information"
+title-font-size: '4em' # a provision to adjust the size of your title. If it is too long then do resize to a smaller value. By default it will be 4em.
+
+baseurl: "/info" # the subpath of your site, e.g. /blog
+url: "http://lionelfaber.me" # the base hostname & protocol for your site
+
+permalink: :title/
+
+# Build settings
+markdown: kramdown
+highlight: rouge
+paginate: 5
+paginate_path: /page:num/
+
+#CSS
+sass:
+  style: compressed
+
+
+include: [_pages]
+
+gems: [jekyll-paginate, jekyll-seo-tag]
